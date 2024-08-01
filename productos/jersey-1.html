@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Encuentra toda clase de artículos deportivos que estes buscando en LION SPORT!!!">
+    <meta property="og:title" content="Todo sobre LION SPORT">
+    <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Caitlyn_Leverenz_in_the_400_IM_%288993125794%29.jpg/600px-Caitlyn_Leverenz_in_the_400_IM_%288993125794%29.jpg">
+    <meta property="og:description" content="Encuentra y compra todos los artículos deportivos que buscas en LION SPORT">
+    <meta property="oog:url" content="www.lionsport.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" integrity="sha512-IJEbgDEF7OeKJRa0MY2PApnyJHRIsgzCveek4ec8VWQ+7KG3ZSKVNYa5xP/Gh0hVP0Mwb+gBsk+GwR3JQGhQNg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Karantina:wght@300;400;700&family=Montserrat:wght@400;700&family=Poppins:ital,wght@1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <script src="../js/producto.js" defer></script>
+    <title>LION SPORT Artículos deportivos</title>
+</head>
+<body>
+    <header class="header">
+        <div>
+            <img class="header__menu" src="../img/menu.svg" alt="menu LION SPORT">
+        </div>
+        <div>
+            <img class="header__logo" src="../img/logo.jpg" alt="lion-sport LION SPORT">
+        </div>
+        <div>
+            <span id='numItems'></span>
+            <img class="header__cart" src="../img/cart.svg" alt="cart LION SPORT">
+        </div>
+    </header>
+    <main>
+      <h1>Producto seleccionado</h1>
+      <article class="products__description">
+        <section class="carousel__section">
+          <article class="carousel__product">            
+            <div class="carousel__container">
+              <div class="carousel__slides">
+                <div class="carousel__numbertext">1 / 4</div>
+                  <img src="../img/jersey-1a.jpg" alt="Jersey-1a LION SPORT" >
+              </div>
+              <div class="carousel__slides">
+                <div class="carousel__numbertext">2 / 4</div>
+                  <img src="../img/jersey-1b.jpg" alt="Jersey-1b LION SPORT" >
+              </div>
+              <div class="carousel__slides">
+                <div class="carousel__numbertext">3 / 4</div>
+                  <img src="../img/jersey-1c.jpg" alt="Jersey-1c LION SPORT" >
+              </div>
+              <div class="carousel__slides">
+                <div class="carousel__numbertext">4 / 4</div>
+                  <img src="../img/jersey-1d.jpg" alt="Jersey-1d LION SPORT" >
+              </div>
+              <a class="carousel__prev" onclick="plusSlidesCarousel(-1)">&#10094;</a>
+              <a class="carousel__next" onclick="plusSlidesCarousel(1)">&#10095;</a>
+              <div class="carousel__caption__container">
+                <p id="carousel__caption"></p>
+              </div>
+              <div class="carousel__row">
+                <div class="carousel__column">
+                  <img class="carousel__img cursor" src="../img/jersey-1a.jpg" onclick="currentSlideCarousel(1)" alt="Jersey-1a LION SPORT">
+                </div>
+                <div class="carousel__column">
+                  <img class="carousel__img cursor" src="../img/jersey-1b.jpg" onclick="currentSlideCarousel(2)" alt="Jersey-1b LION SPORT">
+                </div>
+                <div class="carousel__column">
+                  <img class="carousel__img cursor" src="../img/jersey-1c.jpg" onclick="currentSlideCarousel(3)" alt="Jersey-1c LION SPORT">
+                </div>
+                <div class="carousel__column">
+                  <img class="carousel__img cursor" src="../img/jersey-1d.jpg" onclick="currentSlideCarousel(4)" alt="Jersey-1d LION SPORT">
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+        <section class="product">
+          <h2>Descripción</h2>
+          <p role="contentinfo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea nesciunt, reiciendis nulla modi et alias sint, ab repudiandae sequi fuga ratione possimus, impedit veniam quod eveniet quas qui architecto perferendis.</p>
+          <p role="contentinfo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nisi officiis ducimus in, ipsam animi mollitia odio expedita ea dicta, omnis corrupti error fugit numquam pariatur officia nam iste? Et!</p>
+          <img class="product__img" id="jersey-1" src="../img/jersey-1a.jpg" alt="Jersey-1a LION SPORT">
+          <h3 class="product__description">Jersey adidas</h3>
+          <h4 class="product__price">$1600.00</h4>
+          <button role="button" class="product_add">Añadir a carrito</button>
+        </section>
+      </article>
+        <div class="accordion__product">
+          <button role="button" class="accordion">Características</button>
+          <div class="panel">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem facilis totam dolorum fuga quasi cumque incidunt, ea perspiciatis qui ipsam quos possimus eius velit dolorem blanditiis quisquam at, similique repellat!</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque quam culpa dicta alias esse reprehenderit, aperiam, hic commodi tenetur eos tempora soluta quisquam magni quis nobis laboriosam molestias tempore? Deserunt.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta dignissimos tenetur similique unde doloremque in delectus nulla quidem necessitatibus deserunt doloribus nobis, ipsam quia quod nesciunt nemo dicta blanditiis cumque?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ipsa dolores eos aliquid porro odit quas, harum quos illum nisi voluptate! Distinctio, mollitia harum illum odio perspiciatis explicabo laudantium nam!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, laborum officia velit eaque minima nihil commodi sunt illo quos sit possimus excepturi quia fuga harum voluptatum temporibus similique a eius.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore, sapiente ipsum est quos explicabo doloremque esse modi veritatis. Sequi quos magnam molestias debitis nulla quia, ipsa provident ut voluptatibus. Aliquam.</p>
+          </div>
+          <button role="button" class="accordion">Tallas</button>
+          <div class="panel">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis doloribus ut numquam, incidunt provident illo aspernatur, odio nesciunt laboriosam repellendus beatae, quaerat distinctio praesentium repudiandae libero dolores? Blanditiis, a iure!</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque quam culpa dicta alias esse reprehenderit, aperiam, hic commodi tenetur eos tempora soluta quisquam magni quis nobis laboriosam molestias tempore? Deserunt.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta dignissimos tenetur similique unde doloremque in delectus nulla quidem necessitatibus deserunt doloribus nobis, ipsam quia quod nesciunt nemo dicta blanditiis cumque?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ipsa dolores eos aliquid porro odit quas, harum quos illum nisi voluptate! Distinctio, mollitia harum illum odio perspiciatis explicabo laudantium nam!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, laborum officia velit eaque minima nihil commodi sunt illo quos sit possimus excepturi quia fuga harum voluptatum temporibus similique a eius.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore, sapiente ipsum est quos explicabo doloremque esse modi veritatis. Sequi quos magnam molestias debitis nulla quia, ipsa provident ut voluptatibus. Aliquam.</p>
+          </div>
+          <button role="button" class="accordion">Preguntas</button>
+          <div class="panel">
+            <article>
+              <h3>Ingresa la información requerida</h3>
+              <form class="flex-container">
+                  <fieldset class="flex-item">                    
+                          <label class="name-main bold" for="name">Nombre:</label >
+                          <input type="text" id="name" name="name" placeholder="Ingresa tu nombre">
+                  </fieldset>
+                  <fieldset class="flex-item">
+                          <label for="email">Email:</label>
+                          <input type="email" id="email" name="email" placeholder="Ingresa tu correo electrónico">
+                  </fieldset>
+                  <fieldset class="flex-item">                
+                          <label for="question">Pregunta:</label>
+                          <input type="text" id="question" name="question" placeholder="Ingresa tu pregunta">
+                  </fieldset>
+                  <div>
+                      <button class="submitbtn" aria-label="Enviar información de formulario">Enviar</button>
+                  </div>                    
+              </form>
+            </article>
+          </div>
+        </div>
+        <section>
+          <h1>Opiniones</h1>
+          <p lang="en">They fit good, look great and no blisters after 8 hours on my first outing</p>
+          <p lang="en">They are comfortable to wear and not bulky at all. My sone has worn them multiple times and says they are very comfortable to wear and feel lightweight.</p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque quam culpa dicta alias esse reprehenderit, aperiam, hic commodi tenetur eos tempora soluta quisquam magni quis nobis laboriosam molestias tempore? Deserunt.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta dignissimos tenetur similique unde doloremque in delectus nulla quidem necessitatibus deserunt doloribus nobis, ipsam quia quod nesciunt nemo dicta blanditiis cumque?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ipsa dolores eos aliquid porro odit quas, harum quos illum nisi voluptate! Distinctio, mollitia harum illum odio perspiciatis explicabo laudantium nam!</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, laborum officia velit eaque minima nihil commodi sunt illo quos sit possimus excepturi quia fuga harum voluptatum temporibus similique a eius.</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore, sapiente ipsum est quos explicabo doloremque esse modi veritatis. Sequi quos magnam molestias debitis nulla quia, ipsa provident ut voluptatibus. Aliquam.</p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque quam culpa dicta alias esse reprehenderit, aperiam, hic commodi tenetur eos tempora soluta quisquam magni quis nobis laboriosam molestias tempore? Deserunt.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta dignissimos tenetur similique unde doloremque in delectus nulla quidem necessitatibus deserunt doloribus nobis, ipsam quia quod nesciunt nemo dicta blanditiis cumque?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ipsa dolores eos aliquid porro odit quas, harum quos illum nisi voluptate! Distinctio, mollitia harum illum odio perspiciatis explicabo laudantium nam!</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, laborum officia velit eaque minima nihil commodi sunt illo quos sit possimus excepturi quia fuga harum voluptatum temporibus similique a eius.</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore, sapiente ipsum est quos explicabo doloremque esse modi veritatis. Sequi quos magnam molestias debitis nulla quia, ipsa provident ut voluptatibus. Aliquam.</p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque quam culpa dicta alias esse reprehenderit, aperiam, hic commodi tenetur eos tempora soluta quisquam magni quis nobis laboriosam molestias tempore? Deserunt.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta dignissimos tenetur similique unde doloremque in delectus nulla quidem necessitatibus deserunt doloribus nobis, ipsam quia quod nesciunt nemo dicta blanditiis cumque?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ipsa dolores eos aliquid porro odit quas, harum quos illum nisi voluptate! Distinctio, mollitia harum illum odio perspiciatis explicabo laudantium nam!</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, laborum officia velit eaque minima nihil commodi sunt illo quos sit possimus excepturi quia fuga harum voluptatum temporibus similique a eius.</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore, sapiente ipsum est quos explicabo doloremque esse modi veritatis. Sequi quos magnam molestias debitis nulla quia, ipsa provident ut voluptatibus. Aliquam.</p>
+        </section>
+        <article class="cart">
+            <section class="cart__head">
+                <h4>Carrito de compras</h4>
+                <img src="../img/close.svg" alt="close LION SPORT" class="cart__close">
+            </section>
+        </article>
+        <article class="menu">
+            <section class="menu__head">
+                <h4>Menú</h4>
+                <img class="menu__close" src="../img/close.svg" alt="close LION SPORT">
+            </section>
+            <section>
+                <nav>
+                  <a href="../index.html">Home</a>
+                  <a href="../categorias/tennis.html">Tennis</a>
+                  <a href="../categorias/jersey.html">Jersey</a>
+                  <a href="../categorias/pants.html">Pants</a>
+                </nav>
+            </section>
+        </article>
+        <article>
+          <h1>Información</h1>
+          <form class="flex-container">
+              <fieldset class="flex-item">                    
+                      <label class="name-main bold" for="name">Nombre:</label >
+                      <input type="text" id="name" name="name" placeholder="Ingresa tu nombre">
+              </fieldset>
+              <fieldset class="flex-item">
+                      <label for="email">Email:</label>
+                      <input type="email" id="email" name="email" placeholder="Ingresa tu correo electrónico">
+              </fieldset>
+              <fieldset class="flex-item">                
+                      <label for="phone">Teléfono:</label>
+                      <input type="tel" id="phone" name="phone" placeholder="Ingresa tu teléfono" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                      <small>Formato: 123-456-7890</small>
+              </fieldset>
+              <div>
+                  <button class="submitbtn" aria-label="Enviar información de formulario">Enviar</button>
+              </div>                    
+          </form>
+      </article>
+    </main>
+</body>
+</html>

@@ -1,0 +1,478 @@
+body {
+  background-color: #ffffff;
+  font-family: "Archivo", Arial, Helvetica, sans-serif;
+}
+
+header {
+  width: 98%;
+  padding: 20px 50px;
+  margin: auto;
+  margin-top: 10px;
+  background-color: #A5D920;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 3px;
+}
+header .header__logo {
+  width: 120px;
+  border-radius: 5px;
+}
+header img {
+  width: 40px;
+  cursor: pointer;
+}
+header span {
+  position: absolute;
+  top: 35px;
+  right: 35px;
+  padding: 5px 10px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  color: #0D0D0D;
+  font-size: larger;
+  font-weight: 900;
+}
+
+main {
+  width: 98%;
+  padding: 20px 50px;
+  margin: auto;
+  margin-top: 10px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+}
+main h1 {
+  font-size: 24px;
+  color: #A5D920;
+  font-weight: 900;
+}
+main h2 {
+  font-size: 21px;
+  color: #A5D920;
+  font-weight: 900;
+}
+main h3 {
+  font-size: 18px;
+  color: #A5D920;
+  font-weight: 900;
+}
+main p {
+  font-size: 16px;
+  text-align: justify;
+}
+main a {
+  font-size: 17px;
+  color: #A5D920;
+  font-weight: 900;
+}
+
+.products {
+  background-color: #A5D920;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  gap: 3px;
+  padding: 3px;
+}
+.products .product {
+  background-color: #FEFEFE;
+  padding: 10px;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.products .product button {
+  background-color: #A5D920;
+  border-radius: 10px;
+  border: #A5D920;
+  cursor: pointer;
+}
+.products img {
+  width: 200px;
+  height: 200px;
+}
+
+.products__description {
+  background-color: #ffffff;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(48%, 1fr));
+  gap: 30px;
+}
+.products__description .carousel__section {
+  margin: auto;
+  background-color: #FEFEFE;
+}
+.products__description .product {
+  margin: auto;
+  background-color: #FEFEFE;
+  padding: 10px;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.products__description .product img {
+  width: 10%;
+}
+.products__description .product button {
+  background-color: #A5D920;
+  border-radius: 10px;
+  border: #A5D920;
+  cursor: pointer;
+}
+
+.wanted__product {
+  /* Slideshow container */
+  /* Hide the images by default */
+  /* Caption text */
+  /* Number text (1/3 etc) */
+  /* The dots/bullets/indicators */
+}
+.wanted__product * {
+  box-sizing: border-box;
+}
+.wanted__product img {
+  width: 100%;
+}
+.wanted__product .wanted__container {
+  max-width: 700px;
+  position: relative;
+  margin: auto;
+}
+.wanted__product .wanted__dot {
+  text-align: center;
+}
+.wanted__product .wantedSheet {
+  display: none;
+}
+.wanted__product .wanted__text {
+  color: #030303;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.wanted__product .wanted__number {
+  color: #030303;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.wanted__product .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.wanted__product .active, .wanted__product .dot:hover {
+  background-color: #A5D920;
+}
+
+.products__item {
+  width: 100%;
+  padding: 21px 50px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+.products__item img {
+  width: 150px;
+  height: 150px;
+}
+
+.menu {
+  width: 40%;
+  position: fixed;
+  left: -100%;
+  top: 0px;
+  background-color: #CAD920;
+  padding: 20px;
+  height: auto;
+  box-shadow: 16px 18px 16px 12px rgba(0, 0, 0, 0.29);
+  transition: all 0.25s ease;
+  overflow: hidden;
+  z-index: 999;
+}
+.menu section {
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+.menu .menu__head {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #A5D920;
+}
+.menu .menu__head img {
+  width: 30px;
+}
+.menu.show {
+  left: 0%;
+}
+.menu h4 {
+  color: #0D0D0D;
+  font-size: 25px;
+  padding: 25px 0px;
+  font-weight: 900;
+}
+.menu img {
+  cursor: pointer;
+}
+.menu nav {
+  background-color: #FEFEFE;
+  width: 100%;
+}
+.menu nav a {
+  display: block;
+  color: #0D0D0D;
+}
+
+.cart {
+  width: 45%;
+  position: fixed;
+  right: -100%;
+  top: 0px;
+  background-color: #CAD920;
+  padding: 20px;
+  height: 50%;
+  box-shadow: 16px 18px 16px 12px rgba(0, 0, 0, 0.29);
+  transition: all 0.25s ease;
+  overflow: auto;
+  z-index: 999;
+}
+.cart.show {
+  right: 0%;
+}
+.cart .cart__head {
+  background-color: #A5D920;
+  padding: 10px;
+}
+.cart .cart__head h4 {
+  font-size: 25px;
+  padding: 25px 0px;
+  font-weight: 900;
+}
+.cart .cart__head img {
+  cursor: pointer;
+}
+.cart .cart__comprar__section, .cart .cart__product__section {
+  background-color: #FEFEFE;
+  font-size: 18px;
+}
+.cart section {
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: center;
+}
+.cart .cart__empty {
+  background-color: #FEFEFE;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 600;
+}
+.cart img {
+  width: 25px;
+  padding: 25px 0px;
+}
+.cart .remove {
+  cursor: pointer;
+}
+.cart button {
+  width: 100%;
+  margin: 6px;
+  background-color: #A5D920;
+  border: none;
+  border-radius: 10px;
+}
+
+.carousel__product {
+  /* Position the image container (needed to position the left and right arrows) */
+  /* Hide the images by default */
+  /* Add a pointer when hovering over the thumbnail images */
+  /* Next & previous buttons */
+  /* Position the "next button" to the right */
+  /* On hover, add a black background color with a little bit see-through */
+  /* Number text (1/3 etc) */
+  /* Container for image text */
+  /* Four columns side by side */
+  /* Add a transparency effect for thumnbail images */
+}
+.carousel__product * {
+  box-sizing: border-box;
+}
+.carousel__product img {
+  width: 100%;
+}
+.carousel__product .carousel__container {
+  position: relative;
+  width: 100%;
+  margin: auto;
+}
+.carousel__product .carousel__slides {
+  display: none;
+}
+.carousel__product .cursor {
+  cursor: pointer;
+}
+.carousel__product .carousel__prev,
+.carousel__product .carousel__next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: #030303;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  -moz-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+}
+.carousel__product .carousel__next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.carousel__product .carousel__prev:hover,
+.carousel__product .carousel__next:hover {
+  background-color: #bbb;
+}
+.carousel__product .carousel__numbertext {
+  color: #222;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.carousel__product .carousel__caption__container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+.carousel__product .carousel__row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.carousel__product .carousel__column {
+  float: left;
+  width: 25%;
+}
+.carousel__product .carousel__img {
+  opacity: 0.6;
+}
+.carousel__product .carousel__active,
+.carousel__product .carousel__img:hover {
+  opacity: 1;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion__product {
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  /* Style the accordion panel. Note: hidden by default */
+}
+.accordion__product .accordion {
+  background-color: #A5D920;
+  color: #1E1E1E;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+.accordion__product .active, .accordion__product .accordion:hover {
+  background-color: #CAD920;
+}
+.accordion__product .panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+  color: #1E1E1E;
+}
+.accordion__product .accordion:after {
+  content: "+"; /* Unicode character for "plus" sign (+) */
+  font-size: 20px;
+  color: #1E1E1E;
+  float: right;
+  margin-left: 5px;
+}
+.accordion__product .active:after {
+  content: "-"; /* Unicode character for "minus" sign (-) */
+}
+
+form {
+  color: #1E1E1E;
+  font-weight: 900;
+  align-items: end;
+}
+form small {
+  font-size: small;
+}
+form input[type=text], form select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+form input[type=email], form select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+form input[type=tel], form select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+form input[type=contrasena], form select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+form button {
+  width: 100%;
+  background-color: #A5D920;
+  color: #030303;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+form button:hover {
+  background-color: #CAD920;
+}/*# sourceMappingURL=styles.css.map */
